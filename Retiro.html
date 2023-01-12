@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RETIRO</title>
+    <link rel="stylesheet" href="retiro-styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+        </header>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="Retiro.html">RETIRO</a>
+            <a href="#">BOTANIC</a>
+            <a href="#">FOUNTAINS</a>
+            <a href="#">CAMPO DEL MORO</a>
+            <a href="#">CAPRICHO</a>
+            <a href="#">VISTILLAS</a>
+        </nav>
+
+        <main>
+            <img src="images/Flores-de-Madrid.png" alt="Logo for Flores de Madrid" />
+            <h1>Parque del Retiro </h1>
+            <p>
+                The Parque del Retiro is a tourist attraction that occupies 350 acres of land. 
+                In this park, you may find individuals rowing boats along the lake, riding bikes, or relaxing in the gardens. 
+                In addtion to all of the available activities, you can find peacocks exploring the park with you.
+
+            </p>
+            <a class="a1" href="https://www.esmadrid.com/informacion-turistica/parque-del-retiro" target="_blank">Visit Retiro Park</a>
+
+        </main>
+
+        <section class="gallery">
+            <!-- Image Slider Start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Button Start  -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- Radio Button Close  -->
+                    <!-- Slide Image Start -->
+                    <div class="slide first">
+                        <img src="images/retiro/flower-walkway.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/retiro/fountain.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/retiro/trees.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/retiro/hedge-garden.jpg" alt="">
+                    </div>
+                    <!-- Slide Image Close -->
+                    <!-- Automatic Navigation Start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                        <div class="auto-btn-4"></div>
+                    </div>
+                    <!-- Automatic Navigation Close -->
+                </div>
+
+                <!-- Mannual Navigation Start -->
+                <div class="navigation-mannual">
+                    <label for="radio1" class="mannual-btn"></label>
+                    <label for="radio2" class="mannual-btn"></label>
+                    <label for="radio3" class="mannual-btn"></label>
+                    <label for="radio4" class="mannual-btn"></label>
+                </div>
+                <!-- Mannual Navigation Close -->
+            </div>
+            <!-- Image Slider Close -->
+            <script>
+                var counter = 1;
+                setInterval(function () {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+
+                    if (counter > 8) {
+                        counter = 1
+                    }
+
+                }, 5000);
+            </script>
+        </section>
+
+        <footer>
+            <p>Designed by Jasmine Merritt © 2022</p>
+        </footer>
+    </div>
+
+</body>
+</html>
